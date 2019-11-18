@@ -56,6 +56,7 @@ enum macro_keycodes {
 // TODO figure out why mod tap isn't working for capslock
 #define KC_RSCL  MT(MOD_RSFT, KC_CAPS)
 #define KC_LSCL  MT(MOD_LSFT, KC_CAPS)
+#define KC_LSENT LSFT_T(KC_ENT)
 #define KC_CTB   LCTL(KC_TAB)
 #define KC_CTLTB CTL_T(KC_TAB)
 #define KC_GUIEI GUI_T(KC_LANG2)
@@ -70,7 +71,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
        LSCL,     Z,     X,     C,     V,     B,                      N,     M,  COMM,   DOT,  SLSH,  RSCL,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
-                                  GUIEI, LOWER,   ENT,      SPC, RAISE, ALTKN \
+                                  GUIEI, LOWER, LSENT,      SPC, RAISE, ALTKN \
                               //`--------------------'  `--------------------'
   ),
 
@@ -82,7 +83,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
        LSCL, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,                  XXXXX, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
-                                  GUIEI, LOWER,   ENT,      SPC, RAISE, ALTKN \
+                                  GUIEI, LOWER, LSENT,      SPC, RAISE, ALTKN \
                               //`--------------------'  `--------------------'
   ),
 
@@ -94,7 +95,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
        LSCL, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,                   UNDS,  PLUS,  LBRC,  RBRC,  BSLS,  TILD,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
-                                  GUIEI, LOWER,   ENT,      SPC, RAISE, ALTKN \
+                                  GUIEI, LOWER, LSENT,      SPC, RAISE, ALTKN \
                               //`--------------------'  `--------------------'
   ),
 
@@ -106,7 +107,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
        LMOD,  LHUD,  LSAD,  LVAD, XXXXX, XXXXX,                   MNXT,  MPRV,  VOLD,  VOLU,  MUTE,  MPLY,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
-                                  GUIEI, LOWER,   ENT,      SPC, RAISE, ALTKN \
+                                  GUIEI, LOWER, LSENT,      SPC, RAISE, ALTKN \
                               //`--------------------'  `--------------------'
   )
 };
